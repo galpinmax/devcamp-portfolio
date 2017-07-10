@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/galpinmax/galpin_view_tool
-  revision: eb697a37b14efeee5ae48c793a3d5d47e1b4380f
-  specs:
-    galpin_view_tool (0.1.0)
-
-GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: b156edfee2b9629ad4751ee2a118a04f824ef9eb
   specs:
@@ -79,6 +73,7 @@ GEM
     ffi (1.9.18)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
+    galpin_view_tool (0.1.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.4)
@@ -192,7 +187,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
-  galpin_view_tool!
+  galpin_view_tool (~> 0.1.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
