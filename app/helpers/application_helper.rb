@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-      GalpinViewTool::Renderer.copyright 'Maxwell Galpin', 'All rights reserved'
+     GalpinViewTool::Renderer.copyright 'Maxwell Galpin', 'All rights reserved'
   end
 
   def nav_items
@@ -41,6 +41,10 @@ module ApplicationHelper
       {
         url: portfolios_path,
         title: 'Portfolio'
+      },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
       },
     ]
   end
@@ -68,11 +72,10 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Maxwell G", sticky: false)
+    js add_gritter(msg, title: "maxwell galpin", sticky: false)
   end
 
 end
-
 
 
 
