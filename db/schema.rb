@@ -30,10 +30,10 @@ ActiveRecord::Schema.define(version: 20170801162704) do
   create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.integer  "user_id"
-    t.integer  "blogs_id"
+    t.integer  "blog_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["blogs_id"], name: "index_comments_on_blogs_id", using: :btree
+    t.index ["blog_id"], name: "index_comments_on_blog_id", using: :btree
     t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
@@ -102,7 +102,7 @@ ActiveRecord::Schema.define(version: 20170801162704) do
   end
 
   add_foreign_key "blogs", "topics"
-  add_foreign_key "comments", "blogs", column: "blogs_id"
+  add_foreign_key "comments", "blogs"
   add_foreign_key "comments", "users"
   add_foreign_key "technologies", "portfolios"
 end
