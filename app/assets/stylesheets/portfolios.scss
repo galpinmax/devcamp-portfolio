@@ -4,10 +4,12 @@
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  background-color: grey;
 }
 
 .navbar {
   margin-bottom: 0;
+  background-color: grey;
 }
 
 .jumbotron {
@@ -55,13 +57,20 @@ body {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: grey;
 }
 
 footer p {
   margin-bottom: .25rem;
+  background-color: grey;
 }
  /* Custom Style */
  
  .portfolio-container {
-   padding-top: 30px;
+   padding-top: 30px; 
+   color: white;
+ }
+ 
+ .background {
+   background-color: grey;
  }

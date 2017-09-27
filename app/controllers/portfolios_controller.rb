@@ -71,8 +71,7 @@ class PortfoliosController < ApplicationController
                                       :subtitle,
                                       :body,
                                       :main_image,
-                                      :thumb_image,
-                                      technologies_attributes: [:id, :_destroy, :name]
+                                      :thumb_image
                                      )
   end
   def set_portfolio_item
